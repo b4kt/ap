@@ -28,6 +28,24 @@
 });
 		</script>
 		<center>
+			<style>
+				input {
+ display: block;
+ margin: 20px;
+ width: auto;
+ font-family: serif;
+}
+			</style>
+			<script> function resizeInput() {
+    $(this).attr('size', $(this).val().length);
+}
+
+$('input[type="text"]')
+    // event handler
+    .keyup(resizeInput)
+    // resize on page load
+    .each(resizeInput);
+			</script>
 		<input id="url" name="url" size="100" placeholder=" Type Web Address Here (Made by b4kt)"> <br>
 		<input id="go" type="submit" size="60" value="Go">
 		<br><br><br><br><br> <h2>Compatibility:</h2>
