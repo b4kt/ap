@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Google Classroom</title>
-		<style>
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Google Classroom</title><style>
 			body {
 				text-align: center;
 				color: white;
 				background-color: #202020;
 				font-family: sans-serif;
 				background-color:black;
-			}
-		</style>
-	</head>
-	<body>
-		<script> document.getElementById("url")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("go").click();
-    }
-}); </script>		
-	<script>
+			}</style></head><body><script>
 			$(function() {
     $(window).on('resize', function resize()  {
         $(window).off('resize', resize);
@@ -33,20 +18,8 @@
         }, 50);
     }).resize();
 });
-		</script>
-		<center>
-		<input id="url" name="url" size="100" placeholder=" Type Web Address Here (Made by b4kt)"> <br>
-		<input id="go" type="submit" size="60" value="Go">
-		<br><br><br><br><br>
-<h1> MAKE SURE YOUR USING HTTPS, NOT HTTP, MOST SITES WILL NOT WORK IF ITS HTTP </h1>   
-		<br> <h2> Discord: Yes, but you have to clear browser cache sometimes... </h2>
-		<br> <h2> Youtube: Works with direct video link </h2>
-		<br> <h2> Instagram: Doesn't Work </h2>
-		<br> <h2> Reddit: Yes, but slow because of images </h2>
-	        <br> <h2> Twitch: Yes </h2>
-		<br> <h2> "Other Sites": Yes, works as long as it's a steady bandwidth </h2>
-		</center>
-		<script>
+</script><center><input id="url" name="url" size="100" placeholder=" Type Web Address Here (Made by b4kt)"> <br><input id="go" type="submit" size="60" value="Go"><br><br><br><br><br><h1> MAKE SURE YOUR USING HTTPS, NOT HTTP, MOST SITES WILL NOT WORK IF ITS HTTP </h1>   
+<br> <h2> This works well as long as you have a steady bandwidth </h2></center><script>
 			function xor(str) {
 				return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
 			}
@@ -55,7 +28,4 @@
 				var value = document.getElementById("url").value;
 				if (value) window.location.href = "c/" + xor(/^(http:\/\/|https:\/\/)/i.test(value) ? value : "https://" + value);
 			}
-			
-		</script>
-	</body>
-</html>
+			</script></body></html>
