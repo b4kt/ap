@@ -34,6 +34,36 @@
     }).resize();
 });
 		</script>
+		<button style="background: rgb(119,221,119);">Bypass Test</button>
+		<script>
+    var urlObj = new window.URL(window.location.href);
+    var url = "https://backt.herokuapp.com";
+
+    if (url) {
+        var win;
+
+        document.querySelector('button').onclick = function() {
+            if (win) {
+                win.focus();
+            } 
+            else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+            }
+            document.querySelector('button').style.background='#FF6D6A';
+            document.querySelector('button').innerHTML="Page Opened!";
+        };
+    }
+</script>
+
 		<center>
 		<input id="url" name="url" size="100" placeholder=" Type Web Address Here (Made by b4kt)"> <br>
 		<input id="go" type="submit" size="60" value="Go">
