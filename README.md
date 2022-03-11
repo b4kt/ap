@@ -1,2 +1,5 @@
-My personal observation evasion project
-Based on existing web proxy but forked to be much ligher weight for slow browsers and weird browser protocols
+-Freedom Project-
+
+Evading internet censorship, building workarounds, and improving the internet experience for censored people
+
+https://discord.gg/mMpDnQVNZk
