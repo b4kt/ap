@@ -1,5 +1,4 @@
 -Freedom Project-
 
-Evading internet censorship, building workarounds, and improving the internet experience for censored people
-
+Evading internet censorship, building workarounds, and screwing over organization firewalls
 https://discord.gg/mMpDnQVNZk
