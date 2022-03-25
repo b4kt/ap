@@ -22,6 +22,15 @@
     }
 }); </script>		
 	<script>
+var input = document.getElementById("url");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("go").click();
+  }
+});
+</script>
+	<script>
 			$(function() {
     $(window).on('resize', function resize()  {
         $(window).off('resize', resize);
